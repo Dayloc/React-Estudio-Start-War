@@ -2,7 +2,8 @@ import { useState } from "react";
 
 const useFlux = () => {
   const [store, setStore] = useState({
-   dataPlanets: null, // Inicialmente null
+   dataPlanets: ["Casa",'perro'], 
+   dataCharacters:null,
   });
 
   const actions = {
@@ -10,7 +11,7 @@ const useFlux = () => {
     getCharacters: async () => {
       try {
         const response = await fetch(
-          "https://dragonball-api.com/api/characters?limit=10",
+          "https://swapi.dev/api/people/",
         );
         if (!response.ok) {
           throw new Error("Error al obtener los datos de personajes");
