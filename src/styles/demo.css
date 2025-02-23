@@ -8,13 +8,14 @@
   width: 100%; /* Ancho completo del contenedor */
   display: flex;
   flex-direction: column;
-  border: 1px solid #e23131; /* Borde para mejor visualización */
+  border: 1px solid #080808; /* Borde para mejor visualización */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Evita que el contenido se desborde */
   background-color: dimgray;
   text-align: center;
   margin-top: 10px;
   color: rgb(97, 173, 240);
+  box-shadow: burlywood;
 }
 
 .card-img-top {
